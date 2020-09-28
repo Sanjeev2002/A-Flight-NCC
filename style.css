@@ -25,6 +25,7 @@ nav .logo{
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+  margin-left:0;
 }
 nav ul{
   display: flex;
@@ -44,7 +45,7 @@ nav ul li a{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-nav ul li a.active,
+/* nav ul li a.active, */
 nav ul li a:hover{
   color: #111;
   background: #fff;
@@ -58,6 +59,54 @@ nav .menu-btn i{
 input[type="checkbox"]{
   display: none;
 }
+
+/* Gallery */
+.container{
+  padding:1%;
+  width:80%;
+  margin: 0% auto ;
+  margin-bottom:0px;
+  
+/*    background-color:burlywood;*/
+}
+h1{ 
+  text-align:center;
+  margin-top:1%;
+}
+.column{
+  display:inline-block;
+  margin:0 1%;
+  margin-right:0;
+  width:24%;
+  padding:0px;
+  vertical-align:top;
+}
+.col1{
+  margin-left:0.5%;
+}
+.container img{
+  display:inline-block;
+  margin:1% 0px;
+  padding:1%;
+  border:0px;
+  width:98%;
+  border-radius:10%;
+  transition: all 0.3s ease;
+  opacity:1;
+}
+.container img.active,
+.container img:hover{
+padding:0;
+  width:100%;
+background: #fff;
+margin:0px;
+  opacity:0.9;
+}
+
+
+
+
+/* Media queries */
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
